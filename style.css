@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background:  url('Iskon_logo.png') center center no-repeat;
+  background: url("Iskon_logo.png") center center no-repeat;
   background-size: 600px;
   background-attachment: fixed;
   background-blend-mode: multiply;
@@ -17,78 +17,51 @@ body {
   opacity: 0.95;
 }
 
-/* body {
-      margin: 0;
-      padding: 0;
-      background: #fdf6e3;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: sans-serif;
-      overflow: hidden;
-    } */
+#swing-wrapper {
+  position: relative;
+  width: 350px;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+}
 
-    #swing-wrapper {
-      position: relative;
-      width: 350px;
-      height: 400px;
-      perspective: 1000px;
-      cursor: pointer;
-    }
+#rope {
+  position: absolute;
+  margin: 100% 45%;
+  width: 6px;
+  height: 120px;
+  background: repeating-linear-gradient(
+    45deg,
+    #8b4513,
+    #8b4513 3px,
+    #deb887 3px,
+    #deb887 6px
+  );
+  border-radius: 3px;
+  transform-origin: top center;
+}
 
-    /* .rope {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 6px;
-      height: 120px;
-      background: #8b4513;
-      z-index: 1;
-    } */
-      #rope {
-      position: absolute;
-/*       top: /0; */
-/*       left: 50%; */
-/*       transform: translateX(-50%); */
-        margin: 100% 45%;
-      width: 6px;
-      height: 120px;
-      background: repeating-linear-gradient(
-        45deg,
-        #8b4513,
-        #8b4513 3px,
-        #deb887 3px,
-        #deb887 6px
-      );
-      border-radius: 3px;
-        transform-origin: top center;
-    }
+#swing {
+  width: 100%;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  transform-style: preserve-3d;
+  z-index: 2;
+}
 
-    #swing {
-      width: 100%;
-      position: absolute;
-      top: 120px;
-      left: 0;
-      transform-style: preserve-3d;
-      z-index: 2;
-      
-    }
-
-    .hint {
-      margin-top: 90px;
-      font-size: 18px;
-      color: #555;
-    }
-    .flower {
-      position: absolute;
-      width: 24px;
-      height: 24px;
-      pointer-events: none;
-      z-index: 0;
-    }
+.hint {
+  margin-top: 90px;
+  font-size: 18px;
+  color: #555;
+}
+.flower {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+  z-index: 0;
+}
 
 #muteBtn {
   position: absolute;
