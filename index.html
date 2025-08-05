@@ -1,45 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eJhulan Yatra – Swing Radha Madhava Online | Inspired by Jayapataka Swami</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      eJhulan Yatra – Swing Radha Madhava Online | Inspired by Jayapataka Swami
+    </title>
 
-  <!-- SEO Meta -->
-  <meta name="description" content="Celebrate Jhulan Yatra online. Inspired by Jayapataka Swami Maharaj, swing Radha-Krishna digitally with devotional music and flower offerings.">
-  <meta name="keywords" content="eJhulan, Jhulan Yatra, ISKCON, Radha Krishna, Jayapataka Swami, Prabhupada, digital seva, virtual temple, swing Radha Madhava">
-  <meta name="author" content="Prashanth Bhonagiri">
+    <!-- SEO Meta -->
+    <meta
+      name="description"
+      content="Celebrate Jhulan Yatra online. Inspired by Jayapataka Swami Maharaj, swing Radha-Krishna digitally with devotional music and flower offerings."
+    />
+    <meta
+      name="keywords"
+      content="eJhulan, Jhulan Yatra, ISKCON, Radha Krishna, Jayapataka Swami, Prabhupada, digital seva, virtual temple, swing Radha Madhava"
+    />
+    <meta name="author" content="Prashanth Bhonagiri" />
 
-  <!-- Open Graph Meta (for social media) -->
-  <meta property="og:title" content="eJhulan Yatra – Swing Radha Madhava Online">
-  <meta property="og:description" content="Inspired by Jayapataka Swami, participate in the divine Jhulan Yatra festival from your browser. Offer flowers, swing the Deities, and hear kirtan.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ejhulan.netlify.app/">
-  <meta property="og:image" content="https://raw.githubusercontent.com/PrashanthBhonagiri/ejhulan/main/SWING_IMAGE_transparent.png">
-  <meta property="og:site_name" content="eJhulan Yatra">  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="iskcon_logo.svg">
-  <link rel="stylesheet" href="./style.css">
+    <!-- Open Graph Meta (for social media) -->
+    <meta
+      property="og:title"
+      content="eJhulan Yatra – Swing Radha Madhava Online"
+    />
+    <meta
+      property="og:description"
+      content="Inspired by Jayapataka Swami, participate in the divine Jhulan Yatra festival from your browser. Offer flowers, swing the Deities, and hear kirtan."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ejhulan.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/PrashanthBhonagiri/ejhulan/main/SWING_IMAGE_transparent.png"
+    />
+    <meta property="og:site_name" content="eJhulan Yatra" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="iskcon_logo.svg" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div id="swing-wrapper">
+      <img id="swing" src="SWING_IMAGE_transparent.png" alt="Swing" />
+      <div class="rope" id="rope"></div>
+    </div>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div id="swing-wrapper">
-    
-    <img id="swing" src="SWING_IMAGE_transparent.png" alt="Swing"/>
-    <div class="rope" id="rope"></div>
-  </div>
+    <div class="hint">Tap to swing Radha Madhava</div>
 
-  <div class="hint">Tap to swing Radha Madhava</div>
+    <audio id="bgAudio" loop>
+      <source src="Sri_Sri_Radha_Krishnachandra.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
 
-<audio id="bgAudio" loop>
-  <source src="Sri_Sri_Radha_Krishnachandra.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-<button id="muteBtn">🔊</button>
-<!-- partial -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script><script  src="./script.js"></script>
-
-</body>
+    <button id="muteBtn">🔊</button>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
